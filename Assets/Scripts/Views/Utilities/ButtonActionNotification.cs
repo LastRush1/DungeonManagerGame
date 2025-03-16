@@ -8,11 +8,11 @@ namespace Views.Utilities
         [SerializeField]
         private ButtonActionHubEnum _codeAction;
 
-        public Action<ButtonActionHubEnum> _buttonAction;
+        public Action<ButtonActionHubEnum> ButtonAction;
 
-        public void ButtonAction()
+        public void ButtonActionInvoke()
         {
-            _buttonAction?.Invoke(_codeAction);
+            ButtonAction?.Invoke(_codeAction);
         }
     }
 }

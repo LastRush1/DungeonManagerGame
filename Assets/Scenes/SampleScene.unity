@@ -860,7 +860,7 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 318631589022061960, guid: 1ee907ba8373e0a4dad27ca7c0a23235, type: 3}
   m_PrefabInstance: {fileID: 736329910}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &736329912 stripped
+--- !u!114 &736329913 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 472617017968256381, guid: 1ee907ba8373e0a4dad27ca7c0a23235, type: 3}
   m_PrefabInstance: {fileID: 736329910}
@@ -1522,10 +1522,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a98019ee9ccd6f74dbe17b220eb8692f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _mainPanel: {fileID: 1703886482}
-  _forgePanel: {fileID: 668765041}
-  _charactersPoolPanel: {fileID: 857253288}
-  _missionsPanel: {fileID: 813563076}
+  _panels:
+  - _panel: {fileID: 1703886482}
+    _hubEnum: 1
+  - _panel: {fileID: 668765041}
+    _hubEnum: 2
+  - _panel: {fileID: 857253288}
+    _hubEnum: 3
+  - _panel: {fileID: 813563076}
+    _hubEnum: 4
+  _buttonView: {fileID: 1703886486}
 --- !u!1001 &1401577342
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1897,10 +1903,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 12fd951522eb437a9f791f75e5dab145, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _buttonActions:
+  _buttonActionsList:
   - {fileID: 1241594432}
   - {fileID: 2105715026}
-  - {fileID: 736329912}
+  - {fileID: 736329913}
 --- !u!1001 &1751129067
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2625,7 +2631,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6414b1f454734408a2d5fbf0998754b1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _view: {fileID: 0}
+  _view: {fileID: 1351217524}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

@@ -258,7 +258,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 472617017968256381}
         m_TargetAssemblyTypeName: Views.Utilities.ButtonActionNotification, Assembly-CSharp
-        m_MethodName: ButtonAction
+        m_MethodName: ButtonActionInvoke
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

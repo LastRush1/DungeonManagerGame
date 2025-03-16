@@ -1,15 +1,14 @@
-﻿using System;
-using Models.Hub;
+﻿using Models.Hub;
 using UnityEngine;
 using Views.Hub;
 using Views.Utilities;
+using PanelView = Views.Hub.PanelView;
 
 namespace Controllers.Hub
 {
     public class HubPanelController : MonoBehaviour
     {
-        [SerializeField]
-        HubPanelView _view;
+        [SerializeField] PanelView _view;
 
         private HubPanelModel _model;
 
@@ -21,37 +20,26 @@ namespace Controllers.Hub
         private void Instantiation()
         {
             _model = new HubPanelModel();
-            // прописать подписывание на ивенты кнопок _view.HubButtonView.ButtonActionsListList
-        }
 
-        private void OpenPanel(ButtonActionHubEnum _actionCode)
-        {
-            CloseAllPanels();
-            
-            switch (_actionCode)
+            for (int i = 0; i < _view.ButtonView.ButtonActionsListList.Count; i++)
             {
-                case ButtonActionHubEnum.None:
-                    break;
-                case ButtonActionHubEnum.OpenMainPanel:
-                    PanelState(_view.MainPanel);
-                    break;
-                case ButtonActionHubEnum.OpenForgePanel:
-                    PanelState(_view.ForgePanel);
-                    break;
-                case ButtonActionHubEnum.OpenCharactersPoolButton:
-                    PanelState(_view.CharactersPoolPanel);
-                    break;
-                case ButtonActionHubEnum.OpenMissionsPanel:
-                    PanelState(_view.MissionsPanel);
-                    break;
-                default:
-                    throw new ArgumentOutOfRangeException(nameof(_actionCode), _actionCode, null);
+                _view.ButtonView.ButtonActionsListList[i].ButtonAction += OpenPanel;
             }
         }
 
+        private void OpenPanel(ButtonActionHubEnum actionCode)
+        {
+            CloseAllPanels();
+
+            PanelState(_view.GetPanel(actionCode));
+        }
+
         private void CloseAllPanels()
-        {    
-            //Реализовать закрывашку панелей
+        {
+            for (int i = 0; i < _view.Panels.Count; i++)
+            {
+                _view.Panels[i].Panel.SetActive(false);
+            }
         }
 
         private void PanelState(GameObject panel, bool state = true)
@@ -61,7 +49,10 @@ namespace Controllers.Hub
 
         private void OnDisable()
         {
-            //реализовать отписку от событий
+            for (int i = 0; i < _view.ButtonView.ButtonActionsListList.Count; i++)
+            {
+                _view.ButtonView.ButtonActionsListList[i].ButtonAction -= OpenPanel;
+            }
         }
     }
 }

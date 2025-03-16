@@ -4,7 +4,7 @@ using Views.Utilities;
 
 namespace Views.Hub
 {
-    public class HubButtonView : MonoBehaviour
+    public class ButtonView : MonoBehaviour
     {
         [SerializeField] private List<ButtonActionNotification> _buttonActionsList;
 

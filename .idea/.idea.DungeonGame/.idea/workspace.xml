@@ -8,6 +8,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Views/Utilities/PanelObject.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Views/Hub/HubPanelView.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Views/Utilities/ButtonActionHubEnum.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Views/Utilities/ButtonActionNotification.cs" root0="FORCE_HIGHLIGHTING" />
@@ -20,7 +21,6 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Models/DemoModel.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Controllers/DemoController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Views/Utilities/ButtonActionEnum.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Views/Utilities/ButtonActionNotification.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Views/HubPanelView.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Models/HubPanel.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Models/HubPanelModel.cs" />
@@ -28,8 +28,13 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Models/Hub/HubPanelModel.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Views/Utilities/ButtonActionHubEnum.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Views/Hub/HubButtonView.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Utilites/MyDictionary.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Editor/DictionaryDrawer.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Utilites/PanelObject.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Views/Utilities/PanelObject.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Views/Hub/HubPanelView.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Controllers/Hub/HubPanelController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Views/Utilities/ButtonActionNotification.cs" />
       </list>
     </option>
   </component>
@@ -74,6 +79,7 @@
       <updated>1740729627306</updated>
       <workItem from="1740729637789" duration="1030000" />
       <workItem from="1740732472751" duration="5875000" />
+      <workItem from="1742111465056" duration="3617000" />
     </task>
     <servers />
   </component>
@@ -82,4 +88,23 @@
   </component>
   <component name="UnityProjectConfiguration" hasMinimizedUI="true" />
   <component name="UnityUnitTestConfiguration" currentTestLauncher="EditMode" />
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Assets/Scripts/Controllers/Hub/HubPanelController.cs</url>
+          <line>20</line>
+          <properties documentPath="C:\Compil\MyProjects\DungeonGame\Assets\Scripts\Controllers\Hub\HubPanelController.cs" initialLine="20">
+            <startOffsets>
+              <option value="387" />
+            </startOffsets>
+            <endOffsets>
+              <option value="416" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
 </project>
